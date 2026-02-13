@@ -2,7 +2,7 @@
 
 A beautiful, interactive web-based Valentine's Day card built with Next.js. This single-page application features multiple stages that create a unique and engaging experience for your special someone!
 
-![Valentine Card Preview](/screenshots/stage-2-question.png)
+![Valentine Card Preview](public/screenshots/stage-2-question.png)
 
 ## ✨ Features
 
