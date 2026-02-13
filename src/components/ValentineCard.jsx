@@ -58,15 +58,15 @@ export default function ValentineCard({ secretCode, personName }) {
               <div className="text-8xl">🔒❤️</div>
             </div>
             <h1 className="text-3xl font-bold text-gray-800">
-              Разблокируйте вашу валентинку
+              Разблокируй свою валентинку
             </h1>
             <p className="text-gray-600">
-              Введите секретный код, чтобы открыть что-то особенное...
+              Введи секретный код, чтобы открыть что-то особенное...
             </p>
             <form onSubmit={handleCodeSubmit} className="space-y-4">
               <Input
                 type="text"
-                placeholder="Введите секретный код"
+                placeholder="Секретный код..."
                 value={codeInput}
                 onChange={(e) => setCodeInput(e.target.value)}
                 className="text-center text-lg"
@@ -95,7 +95,6 @@ export default function ValentineCard({ secretCode, personName }) {
                 &ldquo;Во всём мире нет для меня сердца, подобного твоему. 
                 Во всём мире нет для тебя любви, подобной моей.&rdquo;
               </p>
-              <p className="text-sm text-gray-500 mt-2">- Майя Энджелоу</p>
             </div>
             <h2 className="text-2xl font-semibold text-gray-800 pt-4">
               Будешь моей валентинкой? 💖
@@ -129,7 +128,7 @@ export default function ValentineCard({ secretCode, personName }) {
               <div className="text-8xl">🌹✨</div>
             </div>
             <h1 className="text-3xl font-bold text-gray-800">
-              Ура! Я так рад(а)! 🎉
+              Ура!! 🎉
             </h1>
             <p className="text-gray-600">
               Скажи мне, когда и где тебя забрать...
@@ -187,7 +186,7 @@ export default function ValentineCard({ secretCode, personName }) {
               <p className="text-sm text-gray-500 mt-2">- Одри Хепбёрн</p>
             </div>
             <p className="text-gray-700 text-lg">
-              Я считаю моменты до нашего свидания! 
+              Я считаю минуты до нашего свидания! 
               Это будет потрясающе! 💕✨
             </p>
             <div className="pt-4 text-6xl">
