@@ -1,3 +1,5 @@
+> **🌍 Language Versions:** [English](https://github.com/v3sker/nextjs-valentine-card) | [Русский (Russian)](https://github.com/v3sker/nextjs-valentine-card/tree/russian-version)
+
 # 💝 Interactive Valentine's Day Card
 
 A beautiful, interactive web-based Valentine's Day card built with Next.js. This single-page application features multiple stages that create a unique and engaging experience for your special someone!
