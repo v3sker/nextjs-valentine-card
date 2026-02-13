@@ -52,7 +52,7 @@ The card progresses through 4 stages:
 
 ### Stage 1: Secret Code Entry 🔒
 
-![Stage 1 - Secret Code](/screenshots/stage-1-secret-code.png)
+![Stage 1 - Secret Code](public/screenshots/stage-1-secret-code.png)
 
 - Displays a locked heart icon
 - User must enter the correct secret code to proceed
@@ -60,7 +60,7 @@ The card progresses through 4 stages:
 
 ### Stage 2: The Question 💝
 
-![Stage 2 - The Question](/screenshots/stage-2-question.png)
+![Stage 2 - The Question](public/screenshots/stage-2-question.png)
 
 - Greets the person by name (from environment variable)
 - Displays a romantic quote
@@ -70,7 +70,7 @@ The card progresses through 4 stages:
 
 ### Stage 3: Date Details Form 🌹
 
-![Stage 3 - Date Details](/screenshots/stage-3-form.png)
+![Stage 3 - Date Details](public/screenshots/stage-3-form.png)
 
 - Collects pickup time using a time picker
 - Collects pickup address through text input
@@ -79,7 +79,7 @@ The card progresses through 4 stages:
 
 ### Stage 4: Final Message 🎊
 
-![Stage 4 - Final Message](/screenshots/stage-4-final.png)
+![Stage 4 - Final Message](public/screenshots/stage-4-final.png)
 
 - Shows celebratory message
 - Displays another romantic quote
