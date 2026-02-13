@@ -2,6 +2,8 @@
 
 A beautiful, interactive web-based Valentine's Day card built with Next.js. This single-page application features multiple stages that create a unique and engaging experience for your special someone!
 
+![Valentine Card Preview](/screenshots/stage-2-question.png)
+
 ## ✨ Features
 
 - 🔒 **Secret Code Lock** - Protect your message with a personalized secret code
@@ -49,11 +51,17 @@ A beautiful, interactive web-based Valentine's Day card built with Next.js. This
 The card progresses through 4 stages:
 
 ### Stage 1: Secret Code Entry 🔒
+
+![Stage 1 - Secret Code](/screenshots/stage-1-secret-code.png)
+
 - Displays a locked heart icon
 - User must enter the correct secret code to proceed
 - Shows error message for incorrect codes
 
 ### Stage 2: The Question 💝
+
+![Stage 2 - The Question](/screenshots/stage-2-question.png)
+
 - Greets the person by name (from environment variable)
 - Displays a romantic quote
 - Asks "Will you be my Valentine?"
@@ -61,12 +69,18 @@ The card progresses through 4 stages:
 - **No button** - Playfully moves away when you hover over it!
 
 ### Stage 3: Date Details Form 🌹
+
+![Stage 3 - Date Details](/screenshots/stage-3-form.png)
+
 - Collects pickup time using a time picker
 - Collects pickup address through text input
 - Submits data to server action
 - Server logs the details to console
 
 ### Stage 4: Final Message 🎊
+
+![Stage 4 - Final Message](/screenshots/stage-4-final.png)
+
 - Shows celebratory message
 - Displays another romantic quote
 - Expresses excitement for the upcoming date
