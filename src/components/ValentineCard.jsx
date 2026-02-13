@@ -20,7 +20,7 @@ export default function ValentineCard({ secretCode, personName }) {
       setStage(2)
       setError('')
     } else {
-      setError('Incorrect code. Try again! 💔')
+      setError('Неверный код. Попробуйте снова! 💔')
     }
   }
 
@@ -58,15 +58,15 @@ export default function ValentineCard({ secretCode, personName }) {
               <div className="text-8xl">🔒❤️</div>
             </div>
             <h1 className="text-3xl font-bold text-gray-800">
-              Unlock Your Valentine
+              Разблокируйте вашу валентинку
             </h1>
             <p className="text-gray-600">
-              Enter the secret code to reveal something special...
+              Введите секретный код, чтобы открыть что-то особенное...
             </p>
             <form onSubmit={handleCodeSubmit} className="space-y-4">
               <Input
                 type="text"
-                placeholder="Enter secret code"
+                placeholder="Введите секретный код"
                 value={codeInput}
                 onChange={(e) => setCodeInput(e.target.value)}
                 className="text-center text-lg"
@@ -75,7 +75,7 @@ export default function ValentineCard({ secretCode, personName }) {
                 <p className="text-red-500 text-sm">{error}</p>
               )}
               <Button type="submit" className="w-full bg-pink-500 hover:bg-pink-600">
-                Unlock 💖
+                Разблокировать 💖
               </Button>
             </form>
           </div>
@@ -88,24 +88,24 @@ export default function ValentineCard({ secretCode, personName }) {
               <div className="text-8xl">💝</div>
             </div>
             <h1 className="text-3xl font-bold text-gray-800">
-              Hello, {personName}! 💕
+              Привет, {personName}! 💕
             </h1>
             <div className="bg-pink-50 p-6 rounded-xl border-2 border-pink-200">
               <p className="text-lg italic text-gray-700">
-                &ldquo;In all the world, there is no heart for me like yours. 
-                In all the world, there is no love for you like mine.&rdquo;
+                &ldquo;Во всём мире нет для меня сердца, подобного твоему. 
+                Во всём мире нет для тебя любви, подобной моей.&rdquo;
               </p>
-              <p className="text-sm text-gray-500 mt-2">- Maya Angelou</p>
+              <p className="text-sm text-gray-500 mt-2">- Майя Энджелоу</p>
             </div>
             <h2 className="text-2xl font-semibold text-gray-800 pt-4">
-              Will you be my Valentine? 💖
+              Будешь моей валентинкой? 💖
             </h2>
             <div className="flex flex-col items-center gap-4 py-8">
               <Button 
                 onClick={handleYes}
                 className="bg-green-500 hover:bg-green-600 px-8 py-6 text-lg z-10"
               >
-                Yes! 💚
+                Да! 💚
               </Button>
               <div className="relative h-20 w-48 flex items-center justify-center">
                 <Button 
@@ -115,7 +115,7 @@ export default function ValentineCard({ secretCode, personName }) {
                     transform: `translate(${noButtonPosition.x}px, ${noButtonPosition.y}px)`
                   }}
                 >
-                  No 💔
+                  Нет 💔
                 </Button>
               </div>
             </div>
@@ -129,15 +129,15 @@ export default function ValentineCard({ secretCode, personName }) {
               <div className="text-8xl">🌹✨</div>
             </div>
             <h1 className="text-3xl font-bold text-gray-800">
-              Yay! I&apos;m so excited! 🎉
+              Ура! Я так рад(а)! 🎉
             </h1>
             <p className="text-gray-600">
-              Let me know when and where to pick you up...
+              Скажи мне, когда и где тебя забрать...
             </p>
             <form onSubmit={handleFormSubmit} className="space-y-6">
               <div className="text-left space-y-2">
                 <label className="text-sm font-medium text-gray-700">
-                  What time should I pick you up?
+                  В какое время мне тебя забрать?
                 </label>
                 <Input
                   type="time"
@@ -149,11 +149,11 @@ export default function ValentineCard({ secretCode, personName }) {
               </div>
               <div className="text-left space-y-2">
                 <label className="text-sm font-medium text-gray-700">
-                  Where should I pick you up?
+                  Откуда тебя забрать?
                 </label>
                 <Input
                   type="text"
-                  placeholder="Your address"
+                  placeholder="Твой адрес"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                   required
@@ -165,7 +165,7 @@ export default function ValentineCard({ secretCode, personName }) {
                 disabled={isSubmitting}
                 className="w-full bg-pink-500 hover:bg-pink-600 py-6 text-lg"
               >
-                {isSubmitting ? 'Submitting...' : 'Confirm Date 💖'}
+                {isSubmitting ? 'Отправка...' : 'Подтвердить свидание 💖'}
               </Button>
             </form>
           </div>
@@ -178,17 +178,17 @@ export default function ValentineCard({ secretCode, personName }) {
               <div className="text-8xl">🎊💑🎊</div>
             </div>
             <h1 className="text-3xl font-bold text-gray-800">
-              Can&apos;t Wait! 🥰
+              Не могу дождаться! 🥰
             </h1>
             <div className="bg-linear-to-r from-pink-50 to-purple-50 p-6 rounded-xl border-2 border-pink-200">
               <p className="text-lg italic text-gray-700">
-                &ldquo;The best thing to hold onto in life is each other.&rdquo;
+                &ldquo;Лучшее, за что можно держаться в жизни - это друг друга.&rdquo;
               </p>
-              <p className="text-sm text-gray-500 mt-2">- Audrey Hepburn</p>
+              <p className="text-sm text-gray-500 mt-2">- Одри Хепбёрн</p>
             </div>
             <p className="text-gray-700 text-lg">
-              I&apos;m counting down the moments until our date! 
-              This is going to be amazing! 💕✨
+              Я считаю моменты до нашего свидания! 
+              Это будет потрясающе! 💕✨
             </p>
             <div className="pt-4 text-6xl">
               💖🌹🎈

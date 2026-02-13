@@ -1,263 +1,263 @@
-# 💝 Interactive Valentine's Day Card
+# 💝 Интерактивная валентинка
 
-A beautiful, interactive web-based Valentine's Day card built with Next.js. This single-page application features multiple stages that create a unique and engaging experience for your special someone!
+Красивая интерактивная веб-валентинка, созданная с помощью Next.js. Это одностраничное приложение включает несколько этапов, которые создают уникальный и увлекательный опыт для вашего любимого человека!
 
-![Valentine Card Preview](public/screenshots/stage-2-question.png)
+![Предпросмотр валентинки](public/screenshots/stage-2-question.png)
 
-## ✨ Features
+## ✨ Возможности
 
-- 🔒 **Secret Code Lock** - Protect your message with a personalized secret code
-- 💖 **Interactive Question** - Ask the big question with a playful "No" button that runs away from the cursor
-- 📅 **Date Details Form** - Collect pickup time and address through a server-side form
-- 🎨 **Beautiful UI** - Built with Tailwind CSS and shadcn/ui components
-- 📱 **Fully Responsive** - Works seamlessly on mobile and desktop devices
-- ⚡ **Smooth Animations** - Delightful transitions between each stage
+- 🔒 **Секретный код** - Защитите ваше сообщение персонализированным секретным кодом
+- 💖 **Интерактивный вопрос** - Задайте главный вопрос с игривой кнопкой "Нет", которая убегает от курсора
+- 📅 **Форма деталей свидания** - Соберите время и адрес встречи через серверную форму
+- 🎨 **Красивый интерфейс** - Создано с Tailwind CSS и компонентами shadcn/ui
+- 📱 **Полная адаптивность** - Безупречно работает на мобильных устройствах и компьютерах
+- ⚡ **Плавные анимации** - Восхитительные переходы между этапами
 
-## 🚀 Quick Start
+## 🚀 Быстрый старт
 
-### Prerequisites
+### Требования
 
-- Node.js 16.8 or later
-- npm, yarn, pnpm, or bun
+- Node.js 16.8 или новее
+- npm, yarn, pnpm или bun
 
-### Installation
+### Установка
 
-1. **Clone or download this repository**
+1. **Клонируйте или скачайте этот репозиторий**
 
-2. **Install dependencies**
+2. **Установите зависимости**
    ```bash
    npm install
    ```
 
-3. **Create your environment file**
+3. **Создайте файл окружения**
    
-   Create a `.env.local` file in the root directory:
+   Создайте файл `.env.local` в корневой директории:
    ```env
-   SECRET_CODE=YourSecretCode123
-   PERSON_NAME=Their Name
+   SECRET_CODE=ВашСекретныйКод123
+   PERSON_NAME=Имя любимого человека
    ```
 
-4. **Run the development server**
+4. **Запустите сервер разработки**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+5. **Откройте браузер**
    
-   Navigate to [http://localhost:3000](http://localhost:3000)
+   Перейдите по адресу [http://localhost:3000](http://localhost:3000)
 
-## 🎯 How It Works
+## 🎯 Как это работает
 
-The card progresses through 4 stages:
+Открытка проходит через 4 этапа:
 
-### Stage 1: Secret Code Entry 🔒
+### Этап 1: Ввод секретного кода 🔒
 
-![Stage 1 - Secret Code](public/screenshots/stage-1-secret-code.png)
+![Этап 1 - Секретный код](public/screenshots/stage-1-secret-code.png)
 
-- Displays a locked heart icon
-- User must enter the correct secret code to proceed
-- Shows error message for incorrect codes
+- Отображает иконку закрытого сердца
+- Пользователь должен ввести правильный секретный код для продолжения
+- Показывает сообщение об ошибке при неправильном коде
 
-### Stage 2: The Question 💝
+### Этап 2: Вопрос 💝
 
-![Stage 2 - The Question](public/screenshots/stage-2-question.png)
+![Этап 2 - Вопрос](public/screenshots/stage-2-question.png)
 
-- Greets the person by name (from environment variable)
-- Displays a romantic quote
-- Asks "Will you be my Valentine?"
-- **Yes button** - Proceeds to next stage
-- **No button** - Playfully moves away when you hover over it!
+- Приветствует человека по имени (из переменной окружения)
+- Отображает романтичную цитату
+- Задаёт вопрос "Будешь моей валентинкой?"
+- **Кнопка "Да"** - Переход к следующему этапу
+- **Кнопка "Нет"** - Игриво убегает, когда вы наводите на неё курсор!
 
-### Stage 3: Date Details Form 🌹
+### Этап 3: Форма деталей свидания 🌹
 
-![Stage 3 - Date Details](public/screenshots/stage-3-form.png)
+![Этап 3 - Детали свидания](public/screenshots/stage-3-form.png)
 
-- Collects pickup time using a time picker
-- Collects pickup address through text input
-- Submits data to server action
-- Server logs the details to console
+- Собирает время встречи через выбор времени
+- Собирает адрес встречи через текстовое поле
+- Отправляет данные на сервер
+- Сервер записывает детали в консоль
 
-### Stage 4: Final Message 🎊
+### Этап 4: Финальное сообщение 🎊
 
-![Stage 4 - Final Message](public/screenshots/stage-4-final.png)
+![Этап 4 - Финальное сообщение](public/screenshots/stage-4-final.png)
 
-- Shows celebratory message
-- Displays another romantic quote
-- Expresses excitement for the upcoming date
+- Показывает праздничное сообщение
+- Отображает ещё одну романтичную цитату
+- Выражает восторг от предстоящего свидания
 
-## 🛠️ Customization Guide
+## 🛠️ Руководство по настройке
 
-### Personalizing Your Card
+### Персонализация вашей открытки
 
-#### 1. Environment Variables (`.env.local`)
+#### 1. Переменные окружения (`.env.local`)
 
-Edit these values to personalize your card:
+Отредактируйте эти значения для персонализации открытки:
 
 ```env
-# The secret code to unlock the card
-SECRET_CODE=LOVEYOU2026
+# Секретный код для разблокировки открытки
+SECRET_CODE=ЛЮБОВЬ2026
 
-# The name of your special someone
-PERSON_NAME=Your Special Someone
+# Имя вашего любимого человека
+PERSON_NAME=Ваш особенный человек
 ```
 
-#### 2. Love Quotes
+#### 2. Цитаты о любви
 
-To change the quotes, edit `src/components/ValentineCard.jsx`:
+Чтобы изменить цитаты, отредактируйте `src/components/ValentineCard.jsx`:
 
-**Stage 2 Quote (lines ~95-99):**
+**Цитата этапа 2 (строки ~95-99):**
 ```jsx
 <p className="text-lg italic text-gray-700">
-  &ldquo;Your custom quote here&rdquo;
+  &ldquo;Ваша цитата здесь&rdquo;
 </p>
-<p className="text-sm text-gray-500 mt-2">- Author Name</p>
+<p className="text-sm text-gray-500 mt-2">- Имя автора</p>
 ```
 
-**Stage 4 Quote (lines ~183-187):**
+**Цитата этапа 4 (строки ~183-187):**
 ```jsx
 <p className="text-lg italic text-gray-700">
-  &ldquo;Your custom quote here&rdquo;
+  &ldquo;Ваша цитата здесь&rdquo;
 </p>
-<p className="text-sm text-gray-500 mt-2">- Author Name</p>
+<p className="text-sm text-gray-500 mt-2">- Имя автора</p>
 ```
 
-#### 3. Emojis and Icons
+#### 3. Эмодзи и иконки
 
-Change the emoji icons in `src/components/ValentineCard.jsx`:
+Измените эмодзи-иконки в `src/components/ValentineCard.jsx`:
 
-- **Stage 1:** Line ~56: `<div className="text-8xl">🔒❤️</div>`
-- **Stage 2:** Line ~90: `<div className="text-8xl">💝</div>`
-- **Stage 3:** Line ~128: `<div className="text-8xl">🌹✨</div>`
-- **Stage 4:** Line ~177: `<div className="text-8xl">🎊💑🎊</div>`
+- **Этап 1:** Строка ~56: `<div className="text-8xl">🔒❤️</div>`
+- **Этап 2:** Строка ~90: `<div className="text-8xl">💝</div>`
+- **Этап 3:** Строка ~128: `<div className="text-8xl">🌹✨</div>`
+- **Этап 4:** Строка ~177: `<div className="text-8xl">🎊💑🎊</div>`
 
-#### 4. Colors
+#### 4. Цвета
 
-The card uses a pink/purple/red color scheme. To change colors, edit the Tailwind classes in `src/components/ValentineCard.jsx`:
+Открытка использует розово-фиолетово-красную цветовую схему. Чтобы изменить цвета, отредактируйте классы Tailwind в `src/components/ValentineCard.jsx`:
 
-- **Background gradient:** Line ~51: `bg-linear-to-br from-pink-100 via-purple-100 to-red-100`
-- **Yes button:** `bg-green-500 hover:bg-green-600`
-- **No button:** `bg-red-500 hover:bg-red-600`
-- **Submit buttons:** `bg-pink-500 hover:bg-pink-600`
+- **Градиент фона:** Строка ~51: `bg-linear-to-br from-pink-100 via-purple-100 to-red-100`
+- **Кнопка "Да":** `bg-green-500 hover:bg-green-600`
+- **Кнопка "Нет":** `bg-red-500 hover:bg-red-600`
+- **Кнопки отправки:** `bg-pink-500 hover:bg-pink-600`
 
-#### 5. Messages and Text
+#### 5. Сообщения и текст
 
-Edit any text directly in the component:
-- Unlock message (Stage 1)
-- Question text (Stage 2)
-- Form labels (Stage 3)
-- Final message (Stage 4)
+Редактируйте любой текст непосредственно в компоненте:
+- Сообщение разблокировки (Этап 1)
+- Текст вопроса (Этап 2)
+- Метки формы (Этап 3)
+- Финальное сообщение (Этап 4)
 
-## 📁 Project Structure
+## 📁 Структура проекта
 
 ```
 nextjs-valentine-card/
 ├── src/
 │   ├── app/
-│   │   ├── actions.js           # Server action for form submission
-│   │   ├── globals.css          # Global styles
-│   │   ├── layout.js            # Root layout
-│   │   └── page.js              # Main page (passes env vars)
+│   │   ├── actions.js           # Серверное действие для отправки формы
+│   │   ├── globals.css          # Глобальные стили
+│   │   ├── layout.js            # Корневой макет
+│   │   └── page.js              # Главная страница (передаёт переменные окружения)
 │   ├── components/
 │   │   ├── ui/
-│   │   │   ├── button.jsx       # shadcn Button component
-│   │   │   └── input.jsx        # shadcn Input component
-│   │   └── ValentineCard.jsx    # Main Valentine card component
+│   │   │   ├── button.jsx       # Компонент кнопки shadcn
+│   │   │   └── input.jsx        # Компонент ввода shadcn
+│   │   └── ValentineCard.jsx    # Главный компонент валентинки
 │   └── lib/
-│       └── utils.js             # Utility functions
-├── .env.local                   # Environment variables (create this!)
+│       └── utils.js             # Вспомогательные функции
+├── .env.local                   # Переменные окружения (создайте этот файл!)
 ├── package.json
 └── README.md
 ```
 
-## 🔧 Technical Details
+## 🔧 Технические детали
 
-### Built With
+### Создано с помощью
 
-- **[Next.js 16](https://nextjs.org/)** - React framework with App Router
-- **[React 19](https://react.dev/)** - UI library
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[shadcn/ui](https://ui.shadcn.com/)** - Re-usable component library
-- **[Lucide React](https://lucide.dev/)** - Icon library
+- **[Next.js 16](https://nextjs.org/)** - React фреймворк с App Router
+- **[React 19](https://react.dev/)** - Библиотека UI
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - CSS-фреймворк на основе утилит
+- **[shadcn/ui](https://ui.shadcn.com/)** - Библиотека переиспользуемых компонентов
+- **[Lucide React](https://lucide.dev/)** - Библиотека иконок
 
-### Key Features
+### Ключевые возможности
 
-- **Server Actions** - Form submission handled securely on the server
-- **Client Components** - Interactive UI with React hooks
-- **Environment Variables** - Secure configuration management
-- **Responsive Design** - Mobile-first approach with Tailwind
+- **Server Actions** - Отправка формы обрабатывается безопасно на сервере
+- **Client Components** - Интерактивный UI с React хуками
+- **Environment Variables** - Безопасное управление конфигурацией
+- **Responsive Design** - Подход mobile-first с Tailwind
 
-### Server Action
+### Серверное действие
 
-The form submission in Stage 3 uses Next.js Server Actions (`src/app/actions.js`):
+Отправка формы на этапе 3 использует Next.js Server Actions (`src/app/actions.js`):
 
 ```javascript
 export async function submitDateDetails(formData) {
   const hour = formData.get('hour');
   const address = formData.get('address');
 
-  console.log('=== Valentine Date Details ===');
-  console.log('Hour:', hour);
-  console.log('Address:', address);
+  console.log('=== Детали свидания на День Валентина ===');
+  console.log('Время:', hour);
+  console.log('Адрес:', address);
   console.log('=============================');
 
   return { success: true };
 }
 ```
 
-Check your server console (terminal where `npm run dev` is running) to see the submitted details.
+Проверьте консоль сервера (терминал, где запущен `npm run dev`), чтобы увидеть отправленные данные.
 
-## 🚢 Deployment
+## 🚢 Развёртывание
 
-### Deploy to Vercel (Recommended)
+### Развёртывание на Vercel (Рекомендуется)
 
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Add environment variables in Vercel dashboard:
+1. Загрузите код на GitHub
+2. Импортируйте репозиторий на [Vercel](https://vercel.com)
+3. Добавьте переменные окружения в панели Vercel:
    - `SECRET_CODE`
    - `PERSON_NAME`
-4. Deploy!
+4. Разверните!
 
-### Other Platforms
+### Другие платформы
 
-This Next.js app can be deployed to any platform that supports Node.js:
+Это приложение Next.js может быть развёрнуто на любой платформе, поддерживающей Node.js:
 - Netlify
 - AWS Amplify
 - Railway
 - Render
-- Your own server with Docker
+- Ваш собственный сервер с Docker
 
-Remember to set your environment variables in your deployment platform!
+Не забудьте установить переменные окружения на вашей платформе развёртывания!
 
-## 💡 Tips & Ideas
+## 💡 Советы и идеи
 
-- **Share the secret code** separately from the URL (text message, note, etc.)
-- **Deploy before Valentine's Day** and send the link + code as a surprise
-- **Customize the colors** to match your partner's favorite colors
-- **Add your own photos** instead of emojis (requires image uploads)
-- **Extend functionality** - Add more stages, sounds, or animations!
+- **Поделитесь секретным кодом** отдельно от URL (текстовое сообщение, записка и т.д.)
+- **Разверните до Дня Валентина** и отправьте ссылку + код в качестве сюрприза
+- **Настройте цвета**, чтобы они соответствовали любимым цветам вашего партнёра
+- **Добавьте свои фотографии** вместо эмодзи (требуется загрузка изображений)
+- **Расширьте функциональность** - Добавьте больше этапов, звуков или анимаций!
 
-## 🐛 Troubleshooting
+## 🐛 Устранение неполадок
 
-**Issue:** Secret code doesn't work
-- **Solution:** Make sure `.env.local` file exists and `SECRET_CODE` matches exactly (case-sensitive)
+**Проблема:** Секретный код не работает
+- **Решение:** Убедитесь, что файл `.env.local` существует и `SECRET_CODE` совпадает точно (учитывается регистр)
 
-**Issue:** Name not showing up
-- **Solution:** Check `PERSON_NAME` in `.env.local` and restart the dev server
+**Проблема:** Имя не отображается
+- **Решение:** Проверьте `PERSON_NAME` в `.env.local` и перезапустите сервер разработки
 
-**Issue:** Styles look broken
-- **Solution:** Ensure all dependencies are installed (`npm install`)
+**Проблема:** Стили выглядят сломанными
+- **Решение:** Убедитесь, что все зависимости установлены (`npm install`)
 
-**Issue:** Form submission not logging
-- **Solution:** Check your terminal where `npm run dev` is running, not browser console
+**Проблема:** Отправка формы не записывается
+- **Решение:** Проверьте терминал, где запущен `npm run dev`, а не консоль браузера
 
-## 📝 License
+## 📝 Лицензия
 
-This project is open source and available for personal use. Feel free to customize it for your special someone!
+Этот проект имеет открытый исходный код и доступен для личного использования. Настройте его для вашего особенного человека!
 
-## ❤️ Made with Love
+## ❤️ Сделано с любовью
 
-Created as a special way to ask that important Valentine's Day question. Good luck! 🍀💕
+Создано как особый способ задать тот важный вопрос на День Валентина. Удачи! 🍀💕
 
 ---
 
-**Happy Valentine's Day! 💝**
+**С Днём Валентина! 💝**
